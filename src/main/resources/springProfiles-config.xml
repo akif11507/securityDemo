@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <beans profile="dev">
+        <bean id="devDatasourceConfig" class="com.example.securitydemo.configurations.DevDatasourceConfig">
+            <property name="appName" value="CommonApp"/>
+<!--            <property name="username" value="commonUser"/>-->
+<!--            <property name="password" value="commonPassword"/>-->
+        </bean>
+    </beans>
+
+<!--    <beans profile="production">-->
+<!--        <bean id="productionDatasourceConfig" class="io.antmedia.rest.profiles.ProductionDatasourceConfig">-->
+<!--&lt;!&ndash;            <property name="appName" value="ProdApp"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="username" value="prodUser"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <property name="password" value="prodPassword"/>&ndash;&gt;-->
+<!--        </bean>-->
+<!--    </beans>-->
+
+
+</beans>
